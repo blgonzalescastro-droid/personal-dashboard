@@ -1,11 +1,11 @@
 import { createContext, useState } from "react";
-
+import profileImage from "../../assets/profile.jfif";
 export const UserContext = createContext(null);
 
 const userObject = {
     name: 'Beatriz Gonzales',
     email: 'blgonzalescastr@gmail.com',
-    avatar: '../src/assets/profile.jfif',
+    avatar: profileImage,
     role: 'Admin'
 };
 
