@@ -1,10 +1,22 @@
+import { useContext } from "react";
 import { Link } from "react-router";
+import { UserContext } from "../../../common/providers/user-provider";
+import { UserSection } from "./user-section";
+const navigation = [
+    { name: 'Home', href: '/', icon: '../src/assets/hogar.png' },
+    { name: 'About Me', href: 'about', icon: '../src/assets/usuario.png' },
+    { name: 'To do List', href: 'todolist', icon: '../src/assets/editar.png' },
+];
 
 export default function Sidebar() {
+
+    const { user } = useContext(UserContext);
+
     return (
         <aside className="lg:w-80 lg:min-h-screen bg-white/85 backdrop-blur-xl border-white/10 border-b lg:border-r lg:border-b-0">
-            <div className="flex h-full flex-col px-5 py-6 lg:px-6">
+            <div className="flex h-full flex-col justify-between px-5 py-6 lg:px-6">
                 <div className="mt-8">
+
                     <h2 className="px-3 text-xs font-medium uppercase text-gray-800">
                         Navigation
                     </h2>
@@ -24,6 +36,7 @@ export default function Sidebar() {
                         </Link>
                     </nav>
                 </div>
+                <UserSection />
             </div>
         </aside>
     );
