@@ -23,11 +23,12 @@ export function TodoListPage() {
 
     return (
         <div className="p-10">
-            <h1 className="text-2xl font-bold mb-4">To do List</h1>
-            <TodoInput onAddTodo={handleAddTodo} />
-            <TodoItem todo={todos} onToggle={handleToggleTodo} onDelete={handleDeleteTodo} />
+            <div className="inline-block bg-white rounded-xl shadow-md p-6 min-w-80">
+                <h1 className="text-2xl font-bold mb-4">To do List</h1>
+                <TodoInput onAddTodo={handleAddTodo} />
+                <TodoItem todo={todos} onToggle={handleToggleTodo} onDelete={handleDeleteTodo} />
+            </div>
         </div>
-
     );
 
 

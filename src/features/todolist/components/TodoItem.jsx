@@ -1,4 +1,5 @@
 import React from 'react';
+import trashIcon from '../../../assets/basura.png';
 
 export const TodoItem = ({ todo, onToggle, onDelete }) => {
     return (
@@ -16,9 +17,9 @@ export const TodoItem = ({ todo, onToggle, onDelete }) => {
                     </span>
                     <button
                         onClick={() => onDelete(item.id)}
-                        className="ml-auto text-red-500 hover:text-red-700 text-sm"
+                        className="ml-auto hover:opacity-70 transition-opacity"
                     >
-                        Eliminar
+                        <img src={trashIcon} alt="Eliminar" className="w-5 h-5" />
                     </button>
                 </li>
             ))}
