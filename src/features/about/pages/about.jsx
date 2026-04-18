@@ -1,5 +1,5 @@
-import React from "react";
 
-export function AboutMePage() {
+
+export function AboutPage() {
     return <div>AboutMePage</div>;
 }
