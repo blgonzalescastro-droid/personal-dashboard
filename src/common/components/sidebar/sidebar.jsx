@@ -3,12 +3,12 @@ import { Link } from "react-router";
 import { UserContext } from "../../../common/providers/user-provider";
 import { UserSection } from "./user-section";
 
-// 1. IMPORTA las imágenes directamente
+
 import iconoHogar from "../../../assets/hogar.png";
 import iconoUsuario from "../../../assets/usuario.png";
 import iconoEditar from "../../../assets/editar.png";
 
-// (Ajusta los puntos ../ según la distancia real de Sidebar a la carpeta assets)
+
 
 export default function Sidebar() {
     const { user } = useContext(UserContext);
@@ -23,7 +23,6 @@ export default function Sidebar() {
 
                     <nav className="mt-4 space-y-2 gap-4 flex lg:flex-col">
                         <Link to="/" className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100">
-                            {/* 2. USA la variable de la importación en el src */}
                             <img src={iconoHogar} alt="Home" className="h-5 w-5" />
                             Home
                         </Link>
