@@ -7,6 +7,8 @@ import { UserSection } from "./user-section";
 import iconoHogar from "../../../assets/hogar.png";
 import iconoUsuario from "../../../assets/usuario.png";
 import iconoEditar from "../../../assets/editar.png";
+import iconoJuegos from "../../../assets/consola.png";
+
 
 
 
@@ -35,6 +37,11 @@ export default function Sidebar() {
                         <Link to="todolist" className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100">
                             <img src={iconoEditar} alt="To do List" className="h-5 w-5" />
                             To do List
+                        </Link>
+
+                        <Link to="pokemon" className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-800 hover:bg-gray-100">
+                            <img src={iconoJuegos} alt="Pokemon" className="h-5 w-5" />
+                            Pokemon
                         </Link>
                     </nav>
                 </div>
