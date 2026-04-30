@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { TodoItem } from "../components/TodoItem";
 import { TodoInput } from "../components/TodoInput";
 import { initialTodos } from "../data/initial-todos";

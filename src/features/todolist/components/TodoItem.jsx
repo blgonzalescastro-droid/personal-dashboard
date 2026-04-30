@@ -1,4 +1,3 @@
-import React from 'react';
 import trashIcon from '../../../assets/basura.png';
 
 export const TodoItem = ({ todo, onToggle, onDelete }) => {
